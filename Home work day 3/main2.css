@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+	color: red;
+}
+b{
+	color: red;
+}
+b:hover{
+	color: black;
+}
+#father{
+	border: black;
+}
+.son:hover{
+	border-color: red;
+}
+.son2{
+	border: white;
+}

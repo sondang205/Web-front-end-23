@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lear CSS</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<style type="text/css">
+		h1 {
+			color: blue !important;
+			/*!important là để ưu tiên mức cao nhất*/
+		}
+		#Zent {
+			color: green;
+		}
+		.Zent {
+			color: blue;
+		}
+		#parent>.text{
+			color: red;
+		}
+		#parent .text{
+			color: red;
+		}
+		/*khi để dấu > thì chỉ có class đầu mới đổi, còn những class đã qua 1 đời thì ko đổi đc, còn để dấu cách thì sẽ đổi được tất cả*/
+		#parent li:nth-child(2){
+			color: red;
+		}
+		* {
+			color: red;
+			/*Nhận tất cả các giá trị*/
+		}
+		h1 ~ p {
+			color: red;
+			/*Ăn những người ae ngang hàng vs nó*/
+		}
+		h1 + p {
+			color: red;
+			/*Chỉ ăn với người ae ngang hàng và gần nhất nó*/
+		}
+		h1[frontend="23"] {
+			color: red;
+		}
+		h1:hover {
+			color: red;
+			/*hover là sự kiện di chuột vào*/
+		}
+		body {
+			background-image: url("../images/cat.jpg.png");
+			/*background-repeat: repeat;*/
+			/*repeat để full màn, no-repeat là dữ nguyên kích thước ảnh*/
+			background-repeat: no-repeat;
+			/*background-size: cover;*/
+			background-attachment: fixed;
+			background-position: top right;
+		}
+		h1 {
+			font-family: "Times New Roman", sans-serif;
+		}
+		.box {
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			/*display: none;*/
+			/*float: left;*/
+		}
+		.green {
+			background: green;
+			float: left;
+		}
+		.blue {
+			background: blue;
+			clear: both;
+		}
+		.red {
+			background: red;
+			float: right;
+		}
+		#menu {
+			background: green;
+			height: 42px;
+		}
+		.item {
+			line-height: 42px;
+			list-style: none;
+			float: left;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.item a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.item {
+			background: blue;
+		}
+
+	</style>
+</head>
+<body style="height: 1000px;">
+	<!-- 	<h1 style="color: red;">Hello Zent Group</h1> -->
+	<h1 id="Zent" class="Zent">Hello Zent Group</h1>
+	<!-- Độ ưu tiên của id sẽ cao hơn class -->
+	<!-- id chỉ có thể là duy nhất, class có thể có nhiều class vd: class="zent blue", mỗi class cách nhau bởi dấu cách -->
+	<ul id="menu">
+		<li class="item">
+			<a href="#"><i class="fas fa-home" style="color: yellow"></i>Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+	</ul>
+	<div id="parent">
+		<p class="text">Hello Zent Group</p>
+
+		<h1 frontend="23">Hello Zent Group</h1>
+
+		<h1 hover>Hello Zent Group</h1>
+
+		<p class="text">Hello Zent Group</p>
+
+		<ul>
+			<li><i class="fas fa-apple-alt"></i>Ha Nội</li>
+			<li>Nghệ An</li>
+			<li>HCM</li>
+		</ul>
+
+		<p>Lorem ipsum dolor sit amet.</p>
+
+		<div>
+			<p class="text">Lorem ipsum dolor sit amet.</p>
+		</div>
+	</div>
+	<div class="box green"></div>
+	<div class="box blue"></div>
+	<div class="box red"></div>
+
+	<div style="clear: left;"></div>
+	<h1>AAAA</h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form name="login" action="" method="post">
+		<!-- text, email, password, number, date, color, url, file, search, radio, checkbox, hidden, range -->
+		<input type="" name="email"></input>
+		<input type="" name="password"></input>
+		<input type="radio" name="gender"> Male</input>
+		<input type="radio" name="gender"> Female</input>
+		<input type="text" name="email" placeholder="Enter Email" value="myemail@gmail.com" required disabled></input>
+		<!-- placehoder là để hiện chữ mờ -->
+		<!-- required là kiểu bắt buộc, true or false -->
+		<!-- disable là không cho phép nhập bất cứ gì -->
+		<input type="radio"  checked name="gender" value="1" > Male
+		<input type="radio" checked name="gender" value="0"> Female
+		<textarea name="" rows="5" cols="10" placeholder="Enter text here"></textarea>
+		<!-- textarea dùng để nhập vs dữ liệu nhiều hơn -->
+		<input type="button" name="" value="Đăng nhập">
+		<button type="submit">Login</button>
+		<select name="city">
+			<option value="1">Hà Nội</option>
+			<option value="2" selected>Hồ Chí Minh</option>
+			<!-- selected là kiểu mặc định chọn cái này đầu tiên -->
+			<option value="3">Đà Nẵng</option>
+		</select>
+		<input type="reset" value="Reset">
+	</form>
+</body>
+</html>
