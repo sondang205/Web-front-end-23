@@ -1,0 +1,100 @@
+#menu {
+	padding-left: 0;
+	height: 42px;
+	background: #91e554;
+}
+.item {
+	float: left;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 42px;
+	position: relative;
+}
+.item1 {
+	float: left;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 42px;
+	position: relative;
+}
+.item2 {
+	float: left;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 42px;
+	position: relative;
+}
+.item>a {
+	color: #fff;
+	text-decoration: none;
+}
+.item:hover {
+	background: #ef8f4f;
+}
+.item:hover>a {
+	color: #50e5b8;
+}
+.submenu {
+	display: none;
+	padding-left: 0;
+	width: 200px;
+	left: 0;
+	background: #91e554;
+	position: absolute;
+}
+.item:hover .submenu {
+	display: block;
+}
+.item:hover .submenu .item1 {
+	float: none;
+	padding-left: 10px;
+	padding-right: 0; 
+}
+.item1>a {
+	color: #fff;
+	text-decoration: none;
+}
+.item1:hover {
+	background: #ef8f4f;
+}
+.item1:hover>a {
+	color: #50e5b8;
+}
+.submenu1 {
+	display: none;
+	padding-left: 0;
+	padding-top: 75px; 
+	width: 180px;
+	left: 200.7px;
+	background: #91e554;
+	position: absolute;
+}
+.item1:hover .submenu1 {
+	display: block;
+}
+.item1:hover .submenu1 .item2 {
+	float: none;
+	padding-left: 10px;
+}
+.submenu2 {
+	display: none;
+	padding-left: 0;
+	width: 240px;
+	left: 10px;
+	background: #91e554;
+	position: absolute;
+}
+.item:hover .submenu2 {
+	display: block;
+}
+.item:hover .submenu2 .item1 {
+	float: none;
+	padding-left: 10px;
+	padding-right: 0; 
+}
+.item1>.submenu2:hover {
+	background: #91e554;
+}
