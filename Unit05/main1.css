@@ -1,0 +1,44 @@
+#menu {
+	padding-left: 0;
+	background: #3a3a37;
+	height: 48px;
+	padding-top: 5px;
+}
+.item {
+	float: left;
+	list-style: none;
+	padding-left: 21px;
+	padding-right: 21px;
+	line-height: 43px;
+	position: relative;
+}
+.item>a {
+	color: #fff;
+	text-decoration: none;
+}
+.item:hover {
+	background: red;
+}
+.item:hover>a {
+	color: #50e5b8;
+}
+.submenu {
+	background: #fff;
+	padding-left: 0;
+	display: none;
+	width: 160px;
+	left: 0;
+	position: absolute;
+}
+.item:hover .submenu {
+	display: block;
+}
+.item:hover #submenu .item1 {
+	float: none;
+	padding-left: 10px;
+	padding-right: 0; 
+}
+.item1 {
+	color: black;
+	background: #fff;
+}
