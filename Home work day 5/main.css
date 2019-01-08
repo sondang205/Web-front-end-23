@@ -71,13 +71,21 @@ h1 {
 	 margin-right: 24px; 
 	 border-radius: 5px;
 }
+.img4 {
+	position: absolute; 
+	background: #fff; 
+	margin-top: 154px; 
+	width: 40px; 
+	font-size: 33px
+}
 p {
-	padding: 5px 15px;
+	padding: 5px 17px;
 	font-size: 12px;
 	font-family: Arial;
 	margin: 0;
-	float:right;
-	margin-right: 26.2%}
+	float: right;
+	margin-right: 26.2%
+}
 #content {
 	width: 100%;
 	background: #fff;
@@ -195,6 +203,89 @@ p {
     border-right:1px red;
     padding: 0 2px;
 }
+.menu2 {
+	width: 100%;
+    height: 21px;
+    line-height: 21px;
+    background: #fff;
+    padding-left: 0;
+    margin-top: 15px;
+}
+.item2 {
+	display: inline-block;
+    list-style: none;
+    height: 19px;
+    line-height: 19px;
+    border-right:1px red;
+    padding: 0 2px;
+    padding-top: 9px;
+}
+.menu3 {
+	width: 100%;
+    height: 21px;
+    line-height: 21px;
+    background: #fff;
+    padding-left: 0;
+    margin-top: 9px;
+}
+.item3 {
+    list-style: none;
+    height: 19px;
+    line-height: 19px;
+    border-right:1px red;
+    padding: 0 2px;
+}
+.item3>a {
+	color: black;
+	text-decoration: none;
+}
+.item3:hover a {
+	color: #30e548;
+}
+#menu4 {
+	width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #595753;
+    margin-left: -40px;
+}
+.item4 {
+    display: inline-block;
+    list-style: none;
+    height: 20px;
+    line-height: 20px;
+    border-right:1px white solid;
+    padding: 0 104px;
+    padding-left: 0;
+}
+.item4>a {
+    color: #fff;
+    text-decoration: none
+}
+.item4:hover a {
+	color: red;
+}
+#menu5 {
+	width: 100%;
+	margin-top: -8px;
+    height: 25px;
+    line-height: 65px;
+    background: #595753;
+    margin-left: -40px;
+}
+.item5 {
+    display: inline-block;
+    list-style: none;
+    padding: 0 24px;
+    padding-left: 0;
+}
+.item5>a {
+    color: #fff;
+    text-decoration: none
+}
+.item5:hover a {
+	color: red;
+}
 .title {
 	float: left;
 	padding-left: 0;
@@ -278,82 +369,6 @@ p {
 	width: 20%
 	margin-top: 13px;
 }
-.menu2 {
-	width: 100%;
-    height: 21px;
-    line-height: 21px;
-    background: #fff;
-    padding-left: 0;
-    margin-top: 15px;
-}
-.item2 {
-	display: inline-block;
-    list-style: none;
-    height: 19px;
-    line-height: 19px;
-    border-right:1px red;
-    padding: 0 2px;
-    padding-top: 9px;
-}
-.menu3 {
-	width: 100%;
-    height: 21px;
-    line-height: 21px;
-    background: #fff;
-    padding-left: 0;
-    margin-top: 9px;
-}
-.item3 {
-    list-style: none;
-    height: 19px;
-    line-height: 19px;
-    border-right:1px red;
-    padding: 0 2px;
-}
-#menu4 {
-	width: 100%;
-    height: 25px;
-    line-height: 25px;
-    background: #595753;
-    margin-left: -40px;
-}
-.item4 {
-    display: inline-block;
-    list-style: none;
-    height: 20px;
-    line-height: 20px;
-    border-right:1px white solid;
-    padding: 0 104px;
-    padding-left: 0;
-}
-.item4>a {
-    color: #fff;
-    text-decoration: none
-}
-.item4:hover a {
-	color: red;
-}
-#menu5 {
-	width: 100%;
-	margin-top: -8px;
-    height: 25px;
-    line-height: 65px;
-    background: #595753;
-    margin-left: -40px;
-}
-.item5 {
-    display: inline-block;
-    list-style: none;
-    padding: 0 24px;
-    padding-left: 0;
-}
-.item5>a {
-    color: #fff;
-    text-decoration: none
-}
-.item5:hover a {
-	color: red;
-}
 .p1 {
 	float: left;
 	padding-left: 0;
@@ -389,19 +404,49 @@ p {
 .bor{
 	border-right:1px grey solid;
 }
-.item3>a {
-	color: black;
-	text-decoration: none;
-}
-.item3:hover a {
-	color: #30e548;
-}
 .b1>a {
 	color: black;
 	text-decoration: none;
 }
 .b1:hover a {
 	color: #30e548
+}
+@-webkit-keyframes my {
+	 0% { color: red; } 
+	 50% { color: #fff;  } 
+	 100% { color: red;  } 
+ }
+ @-moz-keyframes my { 
+	 0% { color: red;  } 
+	 50% { color: #fff;  }
+	 100% { color: red;  } 
+ }
+ @-o-keyframes my { 
+	 0% { color: red; } 
+	 50% { color: #fff; } 
+	 100% { color: red;  } 
+ }
+ @keyframes my { 
+	 0% { color: red;  } 
+	 50% { color: #fff;  }
+	 100% { color: red;  } 
+ } 
+.b2 {
+        font-size:24px;
+        font-weight:bold;
+	-webkit-animation: my 700ms infinite;
+	-moz-animation: my 700ms infinite; 
+	-o-animation: my 700ms infinite; 
+	animation: my 700ms infinite;
+} 
+.test {
+        color: #af3713;
+        font-size:12px;
+        font-weight:bold;
+	-webkit-animation: my 700ms infinite;
+	-moz-animation: my 700ms infinite; 
+	-o-animation: my 700ms infinite; 
+	animation: my 700ms infinite;
 }
 .h5 {
 	padding: 5px 15px;
@@ -430,3 +475,21 @@ p {
 	margin-right: 11px;
 	background: #fff;
 }
+.icon1 {
+	position: absolute; 
+	float: left;
+	margin-left: -165px;
+	margin-top: 68px; 
+	background: #fff; 
+	font-size: 25px;
+}
+.icon2 {
+	position: absolute; 
+	float: left;
+	margin-left: -165px; 
+	margin-top: 92px; 
+	background: #fff; 
+	font-size: 25px; 
+	width: 26px
+}
+/*Em thêm phần chữ nhấp nháy dòng code 414 -> 450 */
