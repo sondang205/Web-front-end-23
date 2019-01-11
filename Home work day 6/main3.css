@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: #fff;
+	width: 480px;
+	height: 120px;
+	margin: 0 auto;
+}
+header p{
+	font-size: 40px;
+	color: white;
+	padding-bottom: 15px;
+	width: 200px;
+	height:45px;
+	margin: 0 auto;
+	margin-left: 213px;
+}
+.menu{
+	padding-left: 140px;
+	margin: 0 auto;
+}
+
+.phandau{
+	padding-top: 23px;
+	float: left;
+	width: 100%;
+}
+content {
+	width: 480px;
+	height: 3500px;
+	margin: 0 auto;
+	background: #fff;
+}
+.chinh1{
+	height: 2130px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(218, 218, 224, 0.4);
+}
+.chinh2{
+	height: 650px;
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+.chinh3{
+	height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	background: #459fd8;
+	border-top-style: dashed;
+	border-color: #fff;
+	border-width: 5px;
+	border-radius: 5px;
+}
+.phanchinh{
+	width: 480px;
+	margin: 0 auto;
+}
+.nd1{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd2{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd2-1{
+	width: 100%;
+	float: left;
+	height:auto;
+}
+.nd2-2{
+	width: 100%;
+	float: left;
+	height:auto;
+}
+.nd3{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd1-1{
+	margin-left: 5px;
+	width: 100%;
+	height: auto;
+	border-right: 1px solid rgba(128, 128, 128, 0.15);
+	float: left;
+}
+.nd1-1 img{
+	width: 100%;
+}
+.nd1-2{
+	margin-left: 50px;
+	float: left;
+}
+.title {
+	text-align: left;
+}
+.h1 {
+	font-family: Segoe UI Black;
+	padding-top: 100px;
+    text-align: center;
+    color: #459fd8;
+}
+.h2 {
+	font-family: Segoe UI Black;
+	padding-top: 35px;
+    float: left;
+    color: #459fd8;
+}
+.h3 {
+	width: 100%;
+	font-family: Segoe UI Black;
+	padding-top: 20px;
+    float: left;
+    color: #fff;
+}
+.icon {
+	color: #93979e;
+	float: right;
+}
+.icon1 {
+	color: #459fd8;
+	float: left;
+    font-size: 40px;
+    border-radius: 30px;
+}
+.p1 {
+	float: left;
+}
+.but1 {
+	margin-top: 25px;
+    background: #1a4b51;
+    height: 35px;
+    width: 100%;
+    border-radius: 12px;
+}

@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style:none; 
+}
+header{
+	background:#fff;
+	width: 960px;
+	height: 120px;
+	margin: 0 auto;
+}
+header p{
+	font-size: 40px;
+	color: white;
+	padding-bottom: 15px;
+	width: 200px;
+	height:45px;
+	margin: 0 auto;
+	margin-left: 213px;
+}
+.menucon{
+	width: 69%;
+	margin: 0 auto;
+}
+.menucon ul li{
+	float: left;
+	color: red;
+	width: 75px;
+	text-align: center;
+	height: 26px;
+	padding-top: 10px;
+	border-bottom: 4px solid #a32d22;
+	border-top: 4px solid #a32d22;
+}
+.menucon ul .menuli1 {
+	border-bottom: 0px;
+	border-top: 0px;
+}
+.menucon ul li:hover {
+	border-color: white;
+}
+nav { 
+	margin-top: 22px;
+	background: #fff;
+	float: left;
+	width: 100%;
+}
+.phandau{
+	padding-top: 23px;
+	float: left;
+	width: 100%;
+}
+.menuli1 {
+	margin-left: 35px;
+	margin-top: -38px;
+}
+
+content {
+	width: 960px;
+	height: 3500px;
+	margin: 0 auto;
+	background: #fff;
+}
+.chinh1{
+	height: 800px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(218, 218, 224, 0.4);
+}
+.chinh2{
+	height: 420px;
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+.chinh3{
+	height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	background: #459fd8;
+	border-top-style: dashed;
+	border-color: #fff;
+	border-width: 5px;
+	border-radius: 5px;
+}
+.phanchinh{
+	width: 960px;
+	margin: 0 auto;
+}
+.h1 {
+	font-family: Segoe UI Black;
+	padding-top: 100px;
+    text-align: center;
+    color: #459fd8;
+}
+.h2 {
+	font-family: Segoe UI Black;
+	padding-top: 35px;
+    float: left;
+    color: #459fd8;
+}
+.h3 {
+	width: 100%;
+	font-family: Segoe UI Black;
+	padding-top: 20px;
+    float: left;
+    color: #fff;
+}
+.nd1{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd2{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd3{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd4{
+	width: 90%;
+	margin: 0 auto;
+	height:auto;
+}
+.nd3-1{
+	width: 60%;
+	float: left;
+	height:auto;
+}
+.nd3-2{
+	width: 40%;
+	float: left;
+	height:auto;
+}
+.nd1-1{
+	width: 30%;
+	height: auto;
+	border-right: 1px solid rgba(128, 128, 128, 0.15);
+	float: left;
+}
+.nd1-1 img{
+	width: 100%;
+}
+.nd1-2{
+	margin-left: 40px;
+	float: left;
+}
+.nd1-3{
+	margin-left: 40px;
+	float: left;
+}
+.title {
+	text-align: left;
+}
+.icon {
+	color: #93979e;
+	float: right;
+}
+.icon1 {
+	color: #459fd8;
+	float: left;
+    font-size: 40px;
+    border-radius: 30px;
+}
+.p1 {
+	float: left;
+}
+.but1 {
+	margin-top: 25px;
+    background: #1a4b51;
+    height: 35px;
+    width: 66px;
+    border-radius: 12px;
+}
