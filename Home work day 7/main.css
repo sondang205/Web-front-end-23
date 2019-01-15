@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.menucon {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 35px;
+	width: 80%;
+	margin:0 auto;
+}
+.menuli {
+	padding-right: 40px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	float: left;
+	list-style: none;
+}
+.menucon1 {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 35px;
+	width: 80%;
+	margin:0 auto;
+}
+.menuli1 {
+	padding-right: 40px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	float: right;
+	list-style: none;
+}
+.menuli1:hover a {
+	color: #ED502E;
+}
+li:hover {
+	color: #ED502E;
+}
+.fab:hover {
+	color: #ED502E;
+}
+.phandau {
+	float: left;
+	width: 100%;
+}
+.menucon a {
+	color: black;
+	text-decoration: none;
+}
+.menucon1 a {
+	color: #fff;
+	text-decoration: none;
+}
+.menuli:first-child {
+	padding-right: 52%;
+	font-size: 25px;
+}
+span {
+	color: #ED502E;
+}
+nav {
+	width: 100%;
+	height: auto;
+}
+.img img {
+	width: 100%;
+}
+.icon {
+	text-align: center;
+}
+.icon i:hover {
+	color: #ED502E;
+}
+content {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background: #fff;
+}
+footer {
+	width: 100%;
+	height: auto;
+	margin-top: 400px;
+	background: black;
+}
+.phanchinh{
+	width: 100%;
+	margin: 0 auto;
+}
+.nd1 {
+	padding-top: 40px;
+	font-size: 20px;
+	font-family: inherit;
+	color: #333;
+	width: 100%;
+	text-align: center;
+}
+h3 {
+	padding-bottom: 15px;
+}
+.chinh1 {
+	width: 100%;
+	margin-top: 110px;
+	height: auto;
+}
+.chinh2 {
+	margin-top: 80px;
+	width: 100%;
+}
+.chinh3 {
+	margin-top: 500px;
+	width: 100%;
+}
+.chinh4 {
+	background: #ED502E;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	padding-top: 75px;
+    margin-top: 690px;
+    width: 100%;
+    height: 230px;
+}
+.chinh5 {
+	height: 160px;
+	font-size: 20px;
+	padding-top: 100px;
+	color: #333;
+	width: 100%;
+	text-align: center;
+}
+.chinh4 p {
+	padding-top: 25px;
+}
+.chinh4 button {
+	margin-top: 45px;
+}
+.chinh2 img {
+	padding: 0 90px;
+}
+.chinh2-1 {
+	float: left;
+	width: 50%;
+}
+.nd2 {
+	padding-top: 320px;
+	font-size: 20px;
+	color: #333;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+.img2 {
+	padding-left: 90px;
+    width: 90px;
+}
+.title {
+	margin-top: -88px;
+    padding-left: 189px;
+}
+.title p {
+	padding-top: 25px;
+}
+.bigbox {
+	height: 260px;
+	background: #292929;
+    padding: 50px;
+}
+.smallbox {
+	float: left;
+	color: #fff;
+	width: 33.33333333%;
+}
+.smallbox p {
+	padding-top: 40px;
+	padding-right: 10%;
+}
+.id1 {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.id1 ul { 
+	padding-left: 40px;
+	padding-top: 40px;
+	text-decoration: none;
+    list-style: none;
+    margin-left: -40px;
+    font-size: 16px;
+}
+ul.uli {
+	margin-top: 30px;
+}
+ul.uli li {
+	display: inline;
+    font-size: 14px;
+    margin-right: 10px;
+}
+ul.uli li a {
+	color: #d0d0d0;
+    padding: 5px 10px;
+    background: #000;
+    border-radius: 50%
+}
+a {
+	text-decoration: none;
+}
+hr {
+	width: 80%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.box {
+	float: left;
+	height: 250px;
+	text-align: center;
+	width: 25%;
+}
+.box1 {
+	float: left;
+	width: 33.33333333%;
+	height: 250px;
+}
+.box2 {
+	padding-top: 100px;
+	float: left;
+	width: 25%;
+}
+.box i {
+	font-size: 3em;
+	color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    background: #ED502E;
+}
+.box1 i {
+	font-size: 3em;
+	color: #fff;
+    border-radius: 50%;
+    background: #ED502E;
+    padding: 20px;
+}
+.box2 p {
+	padding: 0 60px;
+}
+.box h4 {
+	padding-top: 90px;
+	font-size: 22px;
+}
+.nd2 p {
+	font-size: 19px;
+	padding-top: 30px;
+}
+.but1 {
+	padding: 10px;
+	color: #333;
+    background-color: #fff;
+    border-color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-left: -10px;
+}
+.footer1 p {
+	color: #fff;
+	float: left;
+	padding-top: 18px;
+	padding-left: 55px;
+}
+.footer1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.box2:hover h3 {
+	color: #ED502E;
+}
+@media(max-width: 1535px) {
+	.menuli {
+		display: none;
+	}
+	.menuli:first-child {
+		display: block;
+	}
+}
