@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zent Group - Học lập trình qua dự án</title>
+</head>
+<body>
+	<script language="javascript">
+		var m,n,k;
+		var tong = 0;
+		do {
+			var m= parseInt(prompt("Nhap so m "));
+			var n= parseInt(prompt("Nhap so n "));
+			if(m < n){
+				alert("Phai nhap m >= n ");
+			}
+		} while (m < n);
+		var k= parseInt(prompt("Nhap so k "));
+		for (var i = m - 1; i >= n + 1; i--) {
+			if(i % k == 0){
+				tong = tong + i;
+			}
+		}
+		alert(tong);
+	</script>
+</body>
+</html>

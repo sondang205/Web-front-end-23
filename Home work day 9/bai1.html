@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script language="javascript" type="text/javascript">
+		var min=8;
+		var max=18;
+		function zoominLetter() {
+			var p = document.getElementsByTagName("p");
+			for(i=0;i<p.length;i++) {
+				if(p[i].style.fontSize) {
+					var s = parseInt(p[i].style.fontSize.replace("px");
+				} else {
+					var s = 12;
+				}
+				if(s!=max) {
+					s += 1;
+				}
+				p[i].style.fontSize = s+"px"
+			}
+		}
+		function zoomoutLetter() {
+			var p = document.getElementsByTagName("p");
+			for(i=0;i<p.length;i++) {
+				if(p[i].style.fontSize) {
+					var s = parseInt(p[i].style.fontSize.replace("px");
+				} else {
+					var s = 12;
+				}
+				if(s!=min) {
+					s -= 1;
+				}
+				p[i].style.fontSize = s+"px"
+			}
+		}
+	</script>
+	<a href="javascript/zoominLetter()">A</a>
+	<a href="javascript/zoomoutLetter()">a</a>
+</body>
+</html>

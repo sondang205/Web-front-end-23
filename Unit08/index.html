@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.red {
+			color: red;
+		}
+		.green {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<!-- <h1 id="name">Hello Word</h1>
+
+	<h1 class="name">Hello Word</h1>
+	<h1 class="name">Hello Word 1</h1> -->
+	<!-- <h1 id="name" class="red" name="hiep" age="3">Hello Word</h1> -->
+
+	<input type="text" id="input">
+	<button id="add">ADD</button>
+
+	<!-- <button id="clickMe" style="border-radius: 6px;">Click me</button> -->
+
+	<!-- <div id="content"></div> -->
+
+	<table>
+		<tbody id="content">
+		</tbody>
+	</table>
+																																								
+	<script type="text/javascript">
+		// document.getElementsByClassName('name')[1].style.color="red";
+		// document.getElementById('clickMe').addEventListener('click', function() {
+		// 	document.getElementsByClassName('name')[1].style.color="blue"
+		// })
+		// sự kiện dê chuột vào
+		// document.getElementById('clickMe').addEventListener('mouseover', function() {
+		// 	document.getElementsByClassName('name')[1].style.color="blue"
+		// })
+		// sự kiện dê chuột ra
+		// document.getElementById('clickMe').addEventListener('mouseout', function() {
+		// 	document.getElementsByClassName('name')[1].innerHTML = "Hello Zent Group"
+		// })
+
+		// document.getElementById('clickMe').addEventListener('click', function() {
+		// 	document.getElementById('name').setAttribute('class', 'green')
+		// })
+		// document.getElementById('add').addEventListener('click', function() {
+		// 	var input = document.getElementById('input')
+
+		// 	var content = document.getElementById('content')
+
+		// 	// alert(input.value)
+
+		// 	content.innerHTML += `<div>` + input.value + `</div>`
+
+		// 	input.value = ''
+		// })
+		// document.getElementById('add').addEventListener('click', function() {
+		// 	var input = document.getElementById('input')
+
+		// 	var content = document.getElementById('content')
+
+		// 	// alert(input.value)
+
+		// 	content.innerHTML += `<tr>
+		// 		<td>`+ input.value +`</td>
+		// 		<td><button>Delete</button></td>
+		// 	</tr>`;
+
+		// 	input.value =''
+		// })
+		var i = 1;
+		document.getElementById('add').addEventListener('click', function() {
+			var input = document.getElementById('input')
+
+			var content = document.getElementById('content')
+
+			// alert(input.value)
+
+			content.innerHTML += `<tr id="` + i +`">
+				<td>`+ input.value +`</td>
+				<td><button onclick = "funDelete(` + i +`)">Delete</button></td>
+			</tr>`;
+
+			input.value =''
+			i++;
+		})
+		function funDelete(id) {
+			document.getElementById(id).remove()
+		}
+	</script>
+</body>
+</html>

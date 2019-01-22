@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zent Group - Học lập trình qua dự án</title>
+</head>
+<body>
+	<script language="javascript">
+		var num, n;
+		var num= parseInt(prompt("Nhap n = "));
+		document.write("<br>");
+		n = num;
+		for (var r = 1; r <= num; r++) {
+			for (var sp = 1; sp <= num; sp++) {
+				if(r >= sp){
+					document.write("*");
+				}
+			}
+			document.write("<br>")
+		}
+		document.write("<br>");	
+		for (var r = 1; r <= num; r++) {
+			for (var sp = 1; sp <= num; sp++) {
+				document.write("*");
+			}
+				document.write("<br>");
+		}
+		document.write("<br>");
+		for (var r = 1; r <= num; r++) {
+			if (r == 1 || r == num) {
+				for (var sp = 1; sp <= num; sp++) {
+					document.write("*");
+				}
+			} else {
+				for (var sp = 1; sp <= num; sp++) {
+					if (sp==1||sp==num) {
+					document.write("*");
+					
+					} else {
+					document.write("&nbsp;&nbsp;");
+
+					}
+				}	
+			}
+			document.write("<br>");
+		}
+		document.write("<br>");
+		for (var r = 1; r <= num; r++) {
+			for (var sp = 1; sp <= num; sp++) {
+				if(r <= sp){
+					document.write("*");
+				}
+			}
+			document.write("<br>")
+		}
+		document.write("<br>");	
+	</script>
+</body>
+</html>
