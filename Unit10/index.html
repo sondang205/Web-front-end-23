@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.red {
+			color: red;
+		}
+		.green {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="input">
+	<button id="add">ADD</button>
+	<button id="edit">EDIT</button>
+	<table>
+		<tbody id="content">
+		</tbody>
+	</table>
+																																								
+	<script type="text/javascript">
+		var i = 1;
+		document.getElementById('add').addEventListener('click', function() {
+			var input = document.getElementById('input')
+
+			var content = document.getElementById('content')
+			content.innerHTML += `<tr id="` + i +`">
+				<td>`+ input.value +`</td>
+				<td><button onclick = "funDelete(` + i +`)">Delete</button></td>
+			</tr>`;
+
+			input.value =''
+			i++;
+		})
+		function funDelete(id) {
+			document.getElementById(id).remove()
+		}
+		document.getElementById('edit').addEventListener('click', function() {
+			var input = document.getElementById('input')
+
+			var content = document.getElementById('content')
+			content.innerHTML += `<tr id="` + i +`">
+				<td>`+ input.value +`</td>
+				<td><button onclick = "funEdit(` + i +`)">Edit</button></td>
+			</tr>`;
+
+			input.value =''
+			i++;
+		})
+		function funEdit(id) {
+			document.getElementById(id).edit()
+		}
+	</script>
+</body>
+</html>

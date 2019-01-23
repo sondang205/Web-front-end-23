@@ -1,43 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<script language="javascript" type="text/javascript">
-		var min=8;
-		var max=18;
-		function zoominLetter() {
-			var p = document.getElementsByTagName("p");
-			for(i=0;i<p.length;i++) {
-				if(p[i].style.fontSize) {
-					var s = parseInt(p[i].style.fontSize.replace("px");
-				} else {
-					var s = 12;
-				}
-				if(s!=max) {
-					s += 1;
-				}
-				p[i].style.fontSize = s+"px"
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Bai 1</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
 			}
-		}
-		function zoomoutLetter() {
-			var p = document.getElementsByTagName("p");
-			for(i=0;i<p.length;i++) {
-				if(p[i].style.fontSize) {
-					var s = parseInt(p[i].style.fontSize.replace("px");
-				} else {
-					var s = 12;
-				}
-				if(s!=min) {
-					s -= 1;
-				}
-				p[i].style.fontSize = s+"px"
+			#content {
+				width: 60%;
+				margin: 0 auto;
 			}
-		}
-	</script>
-	<a href="javascript/zoominLetter()">A</a>
-	<a href="javascript/zoomoutLetter()">a</a>
-</body>
+			#box-btn {
+				width: 50%;
+				border: 1px solid black;
+			}
+			.text {
+				font-size: 100%;
+			}
+		</style>
+		<script type="text/javascript">
+			var increase = 0; // biễn để tăng lên
+
+			function macDinh() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+					document.getElementsByClassName('text')[i].style.fontSize="100%";
+				}
+			}
+
+			function chuLon() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase += 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+
+			function chuBe() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase -= 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="box-btn">
+				<p class="text">Cỡ chữ</p>
+				<button onclick="macDinh()" type="button">Mặc định</button>
+				<button onclick="chuLon()" id="chuLon">Chũ lớn</button>
+				<button onclick="chuBe()">Chữ nhỏ</button>
+			</div>
+			<p class="text">Khi người dùng nhấp chuột vào nút Lớn hoặc Nhỏ sẽ tăng hoặc giảm cỡ chữ trên hình vẽ. Cuối cùng họ cũng có thể nhấn vào nút Mặc Định để trả cỡ chữ về giá trị ban đầu. Chúng ta sẽ cho phép người dùng nhấp chuột nhiều lần vào nút, và mỗi lần nhấp cỡ chữ sẽ tăng hoặc giảm dần lên. Ta sẽ cho tăng cỡ chữ lên 40% mỗi khi người dùng nhấp chuột vào nút “Lớn” hoặc nhỏ đi 40% mỗi khi nhấp chuột vào nút “Nhỏ”.</p>
+		</div>
+	</body>
 </html>
