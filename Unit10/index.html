@@ -3,56 +3,81 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style type="text/css">
-		.red {
-			color: red;
-		}
-		.green {
-			color: green;
-		}
-	</style>
 </head>
 <body>
-	<input type="text" id="input">
+	<input type="text" id="text" placeholder="input content">
 	<button id="add">ADD</button>
-	<button id="edit">EDIT</button>
+	<button onclick="toggleChecked(true)">Check all</button>
+  	<button onclick="toggleChecked(false)">Uncheck all</button>
 	<table>
 		<tbody id="content">
+			
 		</tbody>
 	</table>
-																																								
 	<script type="text/javascript">
-		var i = 1;
 		document.getElementById('add').addEventListener('click', function() {
-			var input = document.getElementById('input')
+			var input = document.getElementById('text');
+
+			if (input.value == '') {
+				alert('Moi ban vui long nhap noi dung!!!')
+			}
+
+			var tr =`<tr>
+						<td>
+							<input type="checkbox" name="" class="item">
+						</td>
+						<td>
+							`+ input.value +`
+						</td>
+						<td>
+							<button onclick="funEdit(`+ input.value +`)">Edit</button>
+						</td>
+						<td>
+							<button onclick="funDel(this)">Delete</button>
+						</td>
+					</tr>`
 
 			var content = document.getElementById('content')
-			content.innerHTML += `<tr id="` + i +`">
-				<td>`+ input.value +`</td>
-				<td><button onclick = "funDelete(` + i +`)">Delete</button></td>
-			</tr>`;
 
-			input.value =''
-			i++;
+			content.innerHTML += tr
+
+			input.value = ''
+
 		})
-		function funDelete(id) {
-			document.getElementById(id).remove()
-		}
-		document.getElementById('edit').addEventListener('click', function() {
-			var input = document.getElementById('input')
 
-			var content = document.getElementById('content')
-			content.innerHTML += `<tr id="` + i +`">
-				<td>`+ input.value +`</td>
-				<td><button onclick = "funEdit(` + i +`)">Edit</button></td>
-			</tr>`;
-
-			input.value =''
-			i++;
-		})
-		function funEdit(id) {
-			document.getElementById(id).edit()
+		function funDel(a) {
+			if (confirm('do u want delete') == true) {
+				a.parentNode.parentNode.remove()
+			}
 		}
+
+		// function checkall(){
+  //     		var listItem = document.getElementsByClassName('item');
+  //     			for (var i = listItem.length - 1; i >= 0; i--) {
+  //       		listItem[i].checked=true;
+  //     		}
+  //   	}
+  //   	function uncheck(){
+  //      		var listItem = document.getElementsByClassName('item');
+  //    		for (var i = listItem.length - 1; i >= 0; i--) {
+  //       		listItem[i].checked= false;
+  //     		}
+  //   	}
+
+    	function toggleChecked(status) {
+    		var	checkboxs = document.getElementsByTagName('input');
+    		for (var i = 0; i < checkboxs.length; i++) {
+    			checkboxs[i].checked = status
+    		}
+    	}
+
+    	function funEdit(text) {
+    		var input = document.getElementById('text')
+    		input.value(text)
+
+    		document.getElementById('add').setAttribute('id', 'update')
+    		document.getElementById('update').innerHTML="Update"
+    	}
 	</script>
 </body>
 </html>

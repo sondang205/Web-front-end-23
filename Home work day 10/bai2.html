@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 2</title>
+	<link rel="stylesheet" type="text/css" href="main2.css">
+</head>
+<body>
+    <form id="myForm">
+        <table  width="500" height="300" colspan="3">
+            <tr height="45px" style="background: #666666;">
+                <td colspan="3" align="center" style="font-size: 20px; font-weight: bold; color: white;">
+                    Đăng Nhập Hệ Thống
+                </td>
+            </tr>
+            <tr>
+                <td width="150">Họ và Tên:</td>
+                <td>
+                    <input type="text" name="name" id="name" placeholder="Nhập họ tên..." onkeyup="chekcHoten()" />
+                </td>
+                <td>
+                    <div id="z-name"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="150">Giới Tính:</td>
+                <td > <input type="radio" name="checkbox" value="" checked="checked" id="nam"/> Nam &nbsp;&nbsp;&nbsp;<input type="radio" name="checkbox" value="" id="nu" /> Nữ </td>  
+            </tr>
+            <tr>
+                <td width="150">Email:</td>
+                <td>
+                    <input type="text" name="email" id="email" placeholder="Nhập email..." onkeyup="chekEmail()" />
+                </td>
+                <td>
+                    <div id="z-email"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="150">Số Điện Thoại</td>
+                <td width="160"> <input type="number" id="sdt" size="30" placeholder="Nhập số điện thoại...">
+                </td>
+                <td>
+                    <div id="z-sdt"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td width="150">Mật khẩu:</td>
+                <td>
+                    <input type="text" name="password" id="password" placeholder="Nhập password..." onkeyup="check()" />
+                </td>
+                <td>
+                    <div id="z-password"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="150">Xác nhận mật khẩu:</td>
+                <td>
+                    <input type="text" name="cpassword" id="cpassword" placeholder="Nhập lại password..." onkeyup="checkpassword()" />
+                </td>
+                <td>
+                    <div id="z-cpassword"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" > 
+                    <input type="submit"  name="Đăng Nhập" value="Đăng Nhập" onclick="check()" style="background: lightblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" name="Xóa Trắng" value="Xóa Trắng" style="background: lightblue;" onclick="xoa()"> </td>
+                </tr>
+                <tr style="background: #666666; height:30px;"   >
+                    <td colspan="3"></td>
+                </tr>
+
+            </table>
+        </form>
+
+
+        <script type="text/javascript">
+
+
+            function check() {
+
+                var data = new Array();
+                data[0] = document.getElementById('name').value;
+                data[1] = document.getElementById('email').value;
+                data[2] = document.getElementById('sdt').value;
+                data[3] = document.getElementById('password').value;
+                data[4] = document.getElementById('cpassword').value;
+
+                var myerror = new Array();
+                myerror[0] = "<span>Yêu cầu nhập tên</span>";
+                myerror[1] = "<span>Yêu cầu nhập email</span>";
+                myerror[2] = "<span>Yêu cầu nhập SĐT</span>";
+                myerror[3] = "<span>Yêu cầu nhập mật khẩu</span>";
+                myerror[4] = "<span>Mật khẩu chưa khớp</span>";
+
+
+                var nearby = new Array("z-name", "z-email", "z-sdt", "z-password", "z-cpassword");
+
+                for (i in data) {
+                    var error = myerror[i];
+                    var div = nearby[i];
+
+                    if (data[i]=="") {
+                        document.getElementById(div).innerHTML = error;
+                    }
+                }
+
+            }
+
+            function chekcHoten(){
+
+                var i="";
+                check = false;
+                var hoten = document.getElementById("name").value;
+                var err =  document.getElementById("z-name");
+
+                if (hoten == "") {
+                    i+="Yêu cầu nhập tên"
+                } else if (hoten.length < 8 ){
+                    i+="Tên phải nhiều hơn 8 ký tự"
+                } else {
+                    check=true;
+                    i="";
+                }
+
+
+                if (!check) {
+                    err.innerHTML=i;
+                } else {
+                    err.innerHTML="";
+                }
+
+            }
+
+            function chekEmail() {
+                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var i="";
+                check = false;
+                var email = document.getElementById("email").value;
+                var err =  document.getElementById("z-email");
+
+                if (email == "") {
+                    i+="Yêu cầu nhập email"
+                } else if (!re.test(email) ){ //cái biểu thức chính quy sẽ kiểm tra xem nếu phủ định của đúng là sai nên sẽ phải add err vào
+                    i+="Sai định dạng Email"
+                } else {
+                    check=true;
+                    i="";
+                }
+
+                if (!check) {
+                    err.innerHTML=i;
+                } else {
+                    err.innerHTML="";
+                }
+
+            }
+
+            function checkpassword() {
+                var fpw = document.getElementById("password").value;
+                var spw = document.getElementById("cpassword").value;
+
+                if (fpw==spw) {
+                    document.getElementById('z-cpassword').innerHTML = "Mật khẩu đã khớp";
+                } else {
+                    document.getElementById('z-cpassword').innerHTML = "<span color='red'>Mật khẩu chưa khớp</span>";
+                }
+            }
+
+            function xoa() {
+                document.getElementById("myForm").reset();
+            }
+        </script>
+    </body>
+    </html>

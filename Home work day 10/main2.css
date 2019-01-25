@@ -1,0 +1,17 @@
+body{
+	height: auto;
+	background-image: url(images/bg2.jpg);
+	background-size: 100%;
+	position: relative;
+	margin-left: 490px;
+	margin-top: 200px;
+}
+table{
+	margin-right: 40%;
+}
+span{
+	color: red;
+}
+
+
+

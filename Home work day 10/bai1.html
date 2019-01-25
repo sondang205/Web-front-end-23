@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bai1</title>
+	<link rel="stylesheet" type="text/css" href="main1.css">
+</head>
+<body>
+	<div class="slideshow-container">
+
+		<div class="mySlides">
+			<div class="numbertext">1 / 5</div>
+			<img src="images/bg5.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 5</div>
+			<img src="images/bg2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 5</div>
+			<img src="images/bg3.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">4 / 5</div>
+			<img src="images/bg6.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">5 / 5</div>
+			<img src="images/bg7.jpg" style="width:100%">
+		</div>
+
+		<button class="prev" onclick="nextprevSlides(-1)">&#10094;</button>
+		<button class="next" onclick="nextprevSlides(1)">&#10095;</button>
+
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="cSlide(1)"></span> 
+		<span class="dot" onclick="cSlide(2)"></span> 
+		<span class="dot" onclick="cSlide(3)"></span> 
+		<span class="dot" onclick="cSlide(4)"></span> 
+		<span class="dot" onclick="cSlide(5)"></span> 
+	</div>
+
+	<script>
+		var indexslide = 1;
+		showSlides(indexslide);
+
+		function nextprevSlides(n) {
+			showSlides(indexslide += n);
+		}
+
+		function cSlide(n) {
+			showSlides(indexslide = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {indexslide = 1}    
+				if (n < 1) {indexslide = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[indexslide-1].style.display = "block";  
+					dots[indexslide-1].className += " active";
+				}
+			</script>
+
+		</body>
+		</html>
