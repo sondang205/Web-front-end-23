@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="counter">12345</h1>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="../js/jquery.counterup.min.js"></script>
+	<script type="text/javascript">
+		$('.counter').counterUp({
+	    	delay: 10,
+	    	time: 1000
+		});
+	</script>
+
+
+</html>
+</body> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		label {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="counter">12345</h1>
+
+	<form method="post" action="#"  id="login">
+		<div><input type="email" name="email" placeholder="email"></div>
+		<div><input type="password" name="password" placeholder="password"></div>
+		<button type="submit">submit</button>	
+	</form>
+
+	
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+	<script src="../js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+	<script src="../js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.9.0/additional-methods.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/localization/messages_vi.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+
+		$.validator.addMethod('filesize', function(value, element, param) {
+			// param = size (en bytes)
+			// element = element to validate(<input>)
+			// value = value of the element (file name)
+		})
+
+		$('#login').validate({
+			rules:{
+				email:{
+					required:true,
+					email:true
+				},
+				password:{
+					required:true,
+					minlength:6
+				}
+			}
+		})
+	</script>
+</body>
+</html>
