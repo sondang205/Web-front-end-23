@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title></title>
+
+	<style type="text/css">
+		body {
+			background-image: url(../images6/san-go-cao-cap-maple-carelia-uyenminh.com.jpg);
+			text-align: center;
+		}
+		img {
+			display: inline-block;
+			width: 150px;
+			height: 200px;
+		}
+		.img:hover {
+			opacity: 0.6;
+		}
+		h1 {
+			text-align: center;
+			color: #81D8D0;
+		}
+		#content {
+			margin: auto;
+		}
+		.lb-details {
+			text-align: center !important;
+			color: red;
+		}
+		.lb-close {
+			position: fixed;
+    		top: 10px;
+    		right: 10px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 </head>
 <body>
-	<div id="main">
-		<div class="chinh1">
-			<div class="img1">
-				<img src="images/22279556_1962004037408781_4681549451228594380_n.jpg">
-				<div class="hv1">
-					<h1>Hello & Wellcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<h1>ROBBIN WILLIAMS</h1>
-		</div>
-		<div class="chinh1">
-			<div class="img1">
-				<img src="images/22279556_1962004037408781_4681549451228594380_n.jpg">
-				<div class="hv1">
-					<h1>Hello & Wellcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<h1>DAVID YOUNG</h1>
-		</div>
-		<div class="chinh1">
-			<div class="img1">
-				<img src="images/22279556_1962004037408781_4681549451228594380_n.jpg">
-				<div class="hv1">
-					<h1>Hello & Wellcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<h1>DAVID YOUNG</h1>
-		</div>
-		<div class="chinh1">
-			<div class="img1">
-				<img src="images/22279556_1962004037408781_4681549451228594380_n.jpg">
-				<div class="hv1">
-					<h1>Hello & Wellcome</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</div>
-			</div>
-			<h1>DAVID YOUNG</h1>
-		</div>
-		<div style="clear:both"></div>
-	</div>
+	<h1 class="wow bounce">Album Mèo dễ thương</h1>
+<div id="content">
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Uchiha Sasuke"><img class="img"  src="images/1.jpg"></a>
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Uchiha Sasuke"><img class="img"  src="images/1.jpg"></a>
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Gray"><img class="img"  src="images/1.jpg"></a>
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Uchiha Sasuke"><img class="img"  src="images/1.jpg"></a>
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Monkey D Luffy"><img class="img"  src="images/1.jpg"></a>
+	<a href="images/1.jpg" data-lightbox="roadtrip" data-title="Luffy "><img class="img"  src="images/1.jpg"></a>
+</div>
+
+
+
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="../js/wow.min.js"></script>
+
+	<script>
+    	lightbox.option({
+      	'resizeDuration': 200,
+      	'wrapAround': true,
+      	'showImageNumberLabel':false
+    	})
+	</script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
 </body>
 </html>
