@@ -18,10 +18,4 @@ h1 {
 }
 .lb-details {
 	text-align: center !important;
-	color: red;
-}
-.lb-close {
-	position: fixed;
-    top: 10px;
-    right: 10px;
 }
