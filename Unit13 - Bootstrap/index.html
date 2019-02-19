@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+
+<!-- 	<style type="text/css">
+		.box {
+			height: 200px;
+		}
+		.green {
+			background: green;
+		}
+		.blue {
+			background: blue;
+		}
+		.black {
+			background: black;
+		}
+		.yellow {
+			background: yellow;;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn btn-success">Click Me</button>
+	<div class="container-fluidr">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-3 box green"></div>
+			<div class="col-12 col-sm-6 col-md-3 box blue"></div>
+			<div class="col-12 col-sm-6 col-md-3 box black"></div>
+			<div class="col-12 col-sm-6 col-md-3 box yellow"></div>
+		</div>
+	</div> -->
+
+	<!-- data-backdrop="static" data-keyboard="false" --> <!-- Sự kiện khi click ra ngoài mà ko bị mất Modal. Thêm vào nút button -->
+	
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+	  Click Me
+	</button>
+<!-- 
+	<button type="button" class="btn btn-primary" id="click" >
+	  Click Me
+	</button -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	       		<form action="" method="POST" role="form">
+	       			<legend>Form Submit</legend>
+	       		
+	       			<div class="form-group">
+	       				<label for="">Email</label>
+	       				<input type="text" class="form-control" id="" placeholder="Email">
+	       				<label for="">Password</label>
+	       				<input type="text" class="form-control" id="" placeholder="Password">
+	       			</div>
+	       		
+	       			<button type="submit" class="btn btn-primary">Submit</button>
+	       		</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<img class="img-fluid img-thumbnail" src="../images/cat.jpg.png">
+
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+<!-- 	<script type="text/javascript">
+		$('#click').click(function(){
+			$('#login').modal('show')
+		})
+	</script> -->
+
+</body>
+</html>
