@@ -3,59 +3,110 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-creative/5.1.3/css/creative.min.css">
 	<style type="text/css">
-		img {
-			width: 100%;
-			height: 763px;
-		}
-		.carousel-indicators li {
-			border-radius: 50%;
-			width: 15px;
-			height: 15px;
-		}
-		.fixed-top {
-   			position: fixed;
-    		top: 0;
-    		right: 0;
-    		left: 0;
-    		z-index: 1030;
-    	}
-    	.navbar {
-    		padding-left: 180px;
-    		padding-right: 180px;
-    	}
-    	.nav-item {
-    		font-size: 20px;
-    	}
-    	hr {
-			max-width: 3.25rem;
-    		border-width: .2rem;
-    		border-color: #f4623a;
-    		text-align: center;
-    	}
-    	h1 {
-    		font-size: 3.5rem;
-    	}
-    	.carousel-caption {
-    		padding-bottom: 100px;
-    		bottom: 100px;
-    	}
-    	.btn {
-    		font-size: 0.85rem;
-    		font-weight: 700;
-    		color: #fff;
-    		background-color: #f4623a;
-    		padding: 1.15rem 2.15rem;
-    		border: none;
-    		border-radius: 10rem;
-    	}
-    	.active {
-    		font-size: 1.35rem;
-    		font-weight: 700;
-    	}
-	</style>
+	img {
+		width: 100%;
+		height: 763px;
+	}
+	.carousel-indicators li {
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+	}
+	.fixed-top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+	.navbar {
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+	.nav-item {
+		font-size: 20px;
+	}
+	hr {
+		max-width: 3.25rem;
+		border-width: .2rem;
+		border-color: #f4623a;
+		text-align: center;
+	}
+	h1 {
+		font-size: 3.5rem;
+	}
+	.carousel-caption {
+		padding-bottom: 100px;
+		bottom: 100px;
+	}
+	.btn1 {
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: #fff;
+		background-color: #f4623a;
+		padding: 1.15rem 2.15rem;
+		border: none;
+		border-radius: 10rem;
+	}
+	.active {
+		font-size: 1.35rem;
+		font-weight: 700;
+	}
+	.container {
+		background-color: #f4623a;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 60px;
+	}
+	.container2 {
+		height: 410px;
+		background-color: #fff;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 100px;
+	}
+	#modal1 {
+		position: fixed;
+		bottom: 50%;
+		z-index: 9999;
+		transform: rotate(90deg);
+		left: -58px;
+		font-size: 12px;
+	}
+	.section1 {
+		width: 100%;
+		background-color: #f4623a;
+		height: auto;
+		padding-bottom: 100px; 
+	}
+	.section2 {
+		width: 100%;
+		background-color: #fff;
+		height: auto;
+		padding-bottom: 100px;
+	}
+	.bg1 {
+		background-color: #fff;
+	}
+	.icon {
+		font-size: 70px;
+		color: #f4623a;
+		padding-left: 87.5px;
+		padding-bottom: 30px;
+	}
+	.row {
+		padding-top: 50px;
+	}
+	h3 p {
+		text-align: center;
+	}
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
@@ -96,7 +147,7 @@
 						<h1 class="WOW">WILD NATURE SO BEAUTIFUL</h1>
 						<hr>
 						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-						<button type="button" class="btn">FIND OUT MORE</button>
+						<button type="button" class="btn1">FIND OUT MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -105,7 +156,7 @@
 						<h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
 						<hr>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<button type="button" class="btn">FIND OUT MORE</button>
+						<button type="button" class="btn1">FIND OUT MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -114,7 +165,7 @@
 						<h1>LET DO IT SOMETHING FOR YOUR LIFE</h1>
 						<hr>
 						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-						<button type="button" class="btn">FIND OUT MORE</button>
+						<button type="button" class="btn1">FIND OUT MORE</button>
 					</div>
 				</div>
 			</div>
@@ -128,6 +179,86 @@
 			</a>
 		</div>
 	</div>
+
+	<section class="section1">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<h2 class="text-white mt-0">We've got what you need!</h2>
+					<hr class="divider light my-4">
+					<p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+					<button class="btn btn-light btn-xl js-scroll-trigger">Get Started!</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section2">
+		<div class="container bg1">
+			<h2 class="text-center">At Your Services</h2>
+			<hr>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3">
+					<i class="fas fa-gem icon"></i>
+					<h3 class="text-center">Sturdy Themes</h3>
+					<p class="text-center">Our themes are updated regularly to keep them bug free!</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<i class="fas fa-laptop-code icon"></i>
+					<h3 class="text-center">Up to Date</h3>
+					<p class="text-center">All dependencies are kept current to keep things fresh.</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<i class="fas fa-globe icon"></i>
+					<h3 class="text-center">Ready to Publish</h3>
+					<p class="text-center">You can use this design as is, or you can make changes!</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<i class="fas fa-heart icon"></i>
+					<h3 class="text-center">Made with Love</h3>
+					<p class="text-center">Is it really open source if it's not made with love?</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal" id="modal1">
+		Launch demo modal
+	</button>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title active" id="exampleModalLabel">Registration</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" role="form">
+						<legend>Form Submit</legend>
+
+						<div class="form-group">
+							<label for="">Email</label>
+							<input type="text" class="form-control" id="" placeholder="Email">
+							<label for="">Password</label>
+							<input type="text" class="form-control" id="" placeholder="Password">
+						</div>
+
+						<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 
