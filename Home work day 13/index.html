@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-creative/5.1.3/css/creative.min.css">
 	<style type="text/css">
-	img {
+	.img1 {
 		width: 100%;
 		height: 763px;
 	}
@@ -26,9 +26,6 @@
 	.navbar {
 		padding-left: 180px;
 		padding-right: 180px;
-	}
-	.nav-item {
-		font-size: 20px;
 	}
 	hr {
 		max-width: 3.25rem;
@@ -64,12 +61,11 @@
 		padding-top: 60px;
 	}
 	.container2 {
-		height: 410px;
 		background-color: #fff;
 		width: 100%;
 		margin-right: auto;
 		margin-left: auto;
-		padding-top: 100px;
+		padding-top: 20px;
 	}
 	#modal1 {
 		position: fixed;
@@ -89,7 +85,6 @@
 		width: 100%;
 		background-color: #fff;
 		height: auto;
-		padding-bottom: 100px;
 	}
 	.bg1 {
 		background-color: #fff;
@@ -103,8 +98,28 @@
 	.row {
 		padding-top: 50px;
 	}
-	h3 p {
+	img {
+		height: 278px;
+	}
+	.hv1 {
+		color: #fff;
+		opacity: 0.5;
+		display: none;
+		position: absolute;
+		font-size: 18px;
 		text-align: center;
+		padding-top: 100px;
+		background: rgba(244,98,58,.9);
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 300px;
+	}
+	.img2 {
+		position: relative;
+	}
+	.img2:hover .hv1 {
+		display: block;
 	}
 </style>
 </head>
@@ -142,7 +157,7 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="images/nature.jpg" class="d-block w-100" alt="...">
+					<img class="img1" src="images/nature.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h1 class="WOW">WILD NATURE SO BEAUTIFUL</h1>
 						<hr>
@@ -151,7 +166,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/nature2.jpg" class="d-block w-100" alt="...">
+					<img class="img1" src="images/nature2.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
 						<hr>
@@ -160,7 +175,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/nature3.jpg" class="d-block w-100" alt="...">
+					<img class="img1" src="images/nature3.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<h1>LET DO IT SOMETHING FOR YOUR LIFE</h1>
 						<hr>
@@ -217,6 +232,55 @@
 					<i class="fas fa-heart icon"></i>
 					<h3 class="text-center">Made with Love</h3>
 					<p class="text-center">Is it really open source if it's not made with love?</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section2">
+		<div class="container2">
+			<div class="row">
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/1.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>
+				</div>
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/2.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>		
+				</div>
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/3.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>
+				</div>
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/4.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>
+				</div>
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/5.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>			
+				</div>
+				<div class="img2 col-lg-4 col-sm-12">
+					<img src="images/6.jpg">
+					<div class="hv1">
+						<p>CATEGORY</p>
+						<h2>Project Name</h2>
+					</div>
 				</div>
 			</div>
 		</div>
