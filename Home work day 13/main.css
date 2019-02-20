@@ -134,3 +134,6 @@
 	.mb-3 {
 		font-size: 20px;
 	}
+	.btn1:hover {
+		background-color: #db380f;
+	}
