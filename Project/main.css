@@ -44,6 +44,7 @@
 		font-size: 3.5rem;
 	}
 	.h2 {
+		text-align: center;
 		padding-left: 20px;
 	} 
 	.mb-4 {
@@ -124,6 +125,7 @@
 		width: 100%;
 		background-color: #fff;
 		height: auto;
+		padding-bottom: 20px;
 	}
 	.section3 {
 		width: 100%;
@@ -133,6 +135,13 @@
 	.bg1 {
 		background-color: #eae8de;
 	}
+	.bg2 {
+/*		background-color: black;*/
+		    background-color: #212529;
+    background-image: url(images/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+	}
 	.icon {
 		font-size: 70px;
 		color: #f4623a;
@@ -141,9 +150,6 @@
 	.row {
 		padding-top: 10px;
 	}
-/*	img {
-		height: 278px;
-		}*/
 	.hv1 {
 			color: #fff;
 			opacity: 0.5;
@@ -204,8 +210,10 @@
 
 		}
 		.cus {
+			height: 120px;
+    		width: 120px;
 			border: 1px solid;
-			border-radius: 40px;
+			border-radius: 60px;
 			padding: 5px;
 			z-index: 12;
 			position: relative;
@@ -227,13 +235,14 @@
 		}
 		#content {
 			margin-left: 20px;
-			width: 49%;
+			width: 85%;
 			box-sizing: border-box;
 		}
 		.column {
 			width: 100%;
 			background: #eae8de;
 			box-sizing: border-box;
+			padding-bottom: 20px;
 		}
 		.column-title {
 			margin-left: 20px;
@@ -346,4 +355,18 @@
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+.itron {
+	padding: 10px;
+	font-size: 50px;
+}
+.logo1 {
+	padding-top: 0;
+    text-align: center;
+}
+.list-group-item {
+	padding-top: 0px;
+}
+ul li:hover {
+	color: red;
 }
