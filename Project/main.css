@@ -370,3 +370,9 @@
 ul li:hover {
 	color: red;
 }
+#navbarNav ul li a:hover {
+	color: red;
+}
+a i:hover {
+	color: #f2b31f;
+}

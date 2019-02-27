@@ -25,12 +25,8 @@ header p{
 	margin: 0 auto;
 }
 .menucon ul li{
-	float: left;
 	color: white;
-	width: 75px;
 	text-align: center;
-	height: 26px;
-	padding-top: 10px;
 	border-bottom: 4px solid #b90404;
 }
 .menucon ul li:hover {
